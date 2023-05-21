@@ -88,8 +88,8 @@ function onPredictClick() {
 
 function isSafari() {
   varua = navigator.userAgent.toLowerCase();
-  if (ua.indexOf('safari') != -1) {
-  if (ua.indexOf('chrome') > -1) {
+  if (varua.indexOf('safari') != -1) {
+  if (varua.indexOf('chrome') > -1) {
   return false;
   } else {
   return true;
