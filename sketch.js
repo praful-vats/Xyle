@@ -12,7 +12,7 @@ let isSafa = false;
 function setup() {
   isSafa = isSafari();
   if (isSafa) {
-    alert('Sorry we do not yet support your device, please open this page with Chrome on a desktop. We will support other devices in the near future!');
+    alert('Sorry! Try with Chrome browser.');
     return;
   }
 

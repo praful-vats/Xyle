@@ -5,6 +5,10 @@
 body {
   background-color: rgb(0, 0, 0);
   font-family: neo;
+  cursor: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzIiIGhlaWdodD0iMzIiIHZpZXdCb3g9IjAgMCAzMiAzMiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48Y2lyY2xlIGN4PSIxNiIgY3k9IjE2IiByPSIxMCIgZmlsbD0iYmxhY2siLz48L3N2Zz4='),auto;
+}
+body::-webkit-scrollbar {
+  display:none;
 }
 .a{
   background-color: #ced3d3;
@@ -19,12 +23,21 @@ body {
   margin: 10px;
   height: 180px;
   z-index: 4;
-  position: relative;
 }
 .c{
-  /* background-color: #000000; */
-  /* border-radius: 50px; */
-  height: 180px;
+  background-color: #ced3d3;
+  border-radius: 50px;
+  height: 100%;
+  text-align: center;
+  position: relative;
+  z-index: 7;
+  margin: 10px;
+}
+.c a{
+  font-size: 90px;
+}
+.rot {
+  display: inline-block;
 }
 .reverse-img {
   display: none;
@@ -63,30 +76,14 @@ body {
   position: relative;
   margin-right: -2px;
 }
-/* .link {
-  color: rgb(43, 144, 226);
-  text-decoration: none;
-  cursor: pointer;
-}
-.link:hover {
-  text-decoration: underline;
-} */
 input[type="file"] {
   position: absolute;
   display: none;
 }
 .start-btn {
-  /* color: rgb(43, 144, 226);
-  border: solid 2px rgb(43, 144, 226); */
-  /* width: 88%; */
-  font-size: 18px;
-  /* padding: 9px 0; */
   cursor: pointer;
-  /* background: white; */
-}
-.start-btn:hover {
-  /* background: rgb(43, 144, 226); */
-  /* color: white; */
+  background: transparent;
+  border: none;
 }
 .textl1 {
   position: fixed;
@@ -114,12 +111,12 @@ input[type="file"] {
   text-align: right;
   margin-right: 0px;
   margin-top: 100px;
-  transform: translate(498px,-260px);
+  transform: translate(455px,-260px);
 }
 .textr2 {
   position: fixed;
   font-size: 350px; 
-  z-index: 4;
+  z-index: 5;
   line-height: 15px;
   color: black;
   text-align: right;
@@ -156,6 +153,8 @@ input[type="file"] {
   margin-right: 800px;
   display:inline-block;
   align-items: start;
+  position: relative;
+  z-index: 6;
 }
 .gridscrollb::-webkit-scrollbar {
   display:none;
@@ -166,6 +165,7 @@ input[type="file"] {
   overflow: scroll; 
   text-align: end;
   direction: rtl;
+  z-index: 6;
 }
 .scroll-containerb::-webkit-scrollbar {
   display:none;
@@ -183,10 +183,13 @@ input[type="file"] {
 .gridscrollb img {
   margin-bottom: 5px;
   z-index: 6;
-  position: relative;
 }
 .hw {
-  font-size: 50px;
+  font-size: 150px;
+  background-color: #ced3d3;
+  position: relative;
+  cursor: pointer;
+  transform: translateY(-30px);
 }
 /* .parallax-container {
   height: 100vh;
@@ -203,3 +206,22 @@ input[type="file"] {
   transform: translateZ(0);
   transform-origin: top;
 } */
+
+.out {
+  height: 400px;
+  width: 400px;
+  background-color: #000000;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-left: 34%;
+  border-radius: 50px;
+}
+
+.out img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
