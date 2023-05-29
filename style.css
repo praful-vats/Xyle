@@ -70,6 +70,7 @@ body::-webkit-scrollbar {
   z-index: 3;
   position: relative;
   margin-right: -2px;
+  cursor: e-resize;
 }
 .imageAnchor {
   z-index: 3;
@@ -174,6 +175,7 @@ input[type="file"] {
   z-index: 6;
   position: relative;
   margin-right: -2px;
+  cursor: e-resize;
 }
 .imageAnchor2 {
   z-index: 6;
