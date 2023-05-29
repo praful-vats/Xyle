@@ -63,7 +63,7 @@ body::-webkit-scrollbar {
 }
 
 .gridscroll img {
-  margin-bottom: 5px;
+  margin-bottom: -5px;
   z-index: 3;
 }
 .image {
@@ -181,7 +181,7 @@ input[type="file"] {
   margin-right: -2px;
 }
 .gridscrollb img {
-  margin-bottom: 9px;
+  margin-bottom: 5px;
   z-index: 6;
 }
 .hw {
